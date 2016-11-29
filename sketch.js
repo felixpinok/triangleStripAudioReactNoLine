@@ -38,7 +38,7 @@ function draw() {
 
   translate(width / 6, tono / 2, 0);
 
-  stroke(255);
+  stroke(random(255));
   strokeWeight(0.5);
   noFill();
   beginShape(TRIANGLE_STRIP);
