@@ -11,7 +11,7 @@ function setup() {
   createCanvas(1280, 800, P2D);
   rectMode(CENTER);
   colorMode(HSB, 360, 255, 255);
-  background(0);
+  background(0,0,255);
   x = width / 4.5;
   y = height / 2.;
   mic = new p5.AudioIn();
