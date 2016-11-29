@@ -4,7 +4,7 @@ var y;
 var velCambio = 2.5;
 var outsideRadius;
 var insideRadius;
-var tono = -400;
+var tono = -800;
 var velTono = 0.7;
 
 function setup() {
@@ -30,7 +30,7 @@ function draw() {
   if (tono > 621.) {
     velTono = -1.5;
   }
-  if (tono < -400.) {
+  if (tono < -800.) {
     velTono = 1.5;
   }
   outsideRadius = tono * 2;
