@@ -4,14 +4,14 @@ var y;
 var velCambio = 2.5;
 var outsideRadius;
 var insideRadius;
-var tono = -800;
+var tono = -400;
 var velTono = 0.7;
 
 function setup() {
   createCanvas(1280, 800, P2D);
   rectMode(CENTER);
   colorMode(HSB, 360, 255, 255);
-  background(0,0,255);
+  background(0);
   x = width / 4.5;
   y = height / 2.;
   mic = new p5.AudioIn();
@@ -30,7 +30,7 @@ function draw() {
   if (tono > 621.) {
     velTono = -1.5;
   }
-  if (tono < -800.) {
+  if (tono < -400.) {
     velTono = 1.5;
   }
   outsideRadius = tono * 2;
@@ -38,7 +38,7 @@ function draw() {
 
   translate(width / 6, tono / 2, 0);
 
-  stroke(random(255));
+  stroke(255);
   strokeWeight(0.5);
   noFill();
   beginShape(TRIANGLE_STRIP);
